@@ -10,6 +10,8 @@ var whitelist = ['https://amp-ouest--france-fr.cdn.ampproject.org',
 ]
 
 var corsOptions = {
+  credentials:true,
+  methods:'GET,HEAD,PUT,PATCH,POST,DELETE'.split(','),
   origin: function(origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
       callback(null, true)
