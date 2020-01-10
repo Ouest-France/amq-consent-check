@@ -1,7 +1,7 @@
 {
   "name": "ouest-france-amq-consent-check",
   "version": "1.0.0",
-  "description": "",
+  "description": "c'est temporaire pour le weekend",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
