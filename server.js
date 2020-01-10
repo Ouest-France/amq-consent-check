@@ -31,6 +31,12 @@ app.post('/', cors(corsOptions), function(req, res, next) {
   });
 })
 
+app.options('*', cors(corsOptions), function(req, res, next) {
+  res.json({
+    "promptIfUnknown": true
+  });
+})
+
 app.listen(8080, function() {
   console.log('CORS-enabled web server listening on port 80')
 })
