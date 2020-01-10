@@ -19,6 +19,11 @@ var corsOptions = {
   }
 }
 
+app.get('/', function(req, res, next) {
+  res.json({
+    "hello": "world"
+  });
+})
 
 app.post('/', cors(corsOptions), function(req, res, next) {
   res.json({
